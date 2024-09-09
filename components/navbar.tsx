@@ -44,7 +44,7 @@ export default function Navbar({
       >
         <div className="flex items-center justify-between py-2 font-medium transition">
           <Logo />
-          <ul className="hidden items-center gap-6 capitalize lg:flex">
+          <ul className="hidden items-center gap-6 capitalize md:flex">
             {routes.map((route) => {
               if (route.label === "services") {
                 return (
@@ -97,7 +97,7 @@ export default function Navbar({
 
           {/* Hamburger Menu */}
           <div
-            className="cursor-pointer lg:hidden"
+            className="cursor-pointer md:hidden"
             onClick={() => setOpen(!open)}
           >
             <MdMenu className="text-3xl text-white" />
@@ -113,7 +113,7 @@ export default function Navbar({
               animate={{ opacity: 1 }}
               // transition={{ duration: 0.2 }}
               exit={{ opacity: 0 }}
-              className="absolute right-0 top-20 z-10 h-[calc(screen-116px)] w-full bg-black md:hidden"
+              className="absolute right-0 top-20 z-10 h-screen w-full bg-black md:hidden"
             >
               <div className="relative flex h-full items-center justify-center pb-28 text-xl font-semibold first-letter:flex-col">
                 <ul className="ml-20 mt-40 flex h-full w-2/3 flex-col items-start gap-6 capitalize">

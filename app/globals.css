@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-glass-container {
+.glass-container {
   position: relative;
   /* height: 500px; */
 }
@@ -10,6 +10,10 @@ glass-container {
 .glass-container::before {
   @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
   content: "";
+}
+
+.heading-gradient {
+  @apply bg-gradient-to-b from-violet-100 to-indigo-500 bg-clip-text not-italic text-transparent;
 }
 
 .signal-line {
