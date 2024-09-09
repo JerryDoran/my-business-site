@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaArrowRight, FaCircleMinus, FaCirclePlus } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { MdMenu, MdOutlineKeyboardArrowDown } from "react-icons/md";
