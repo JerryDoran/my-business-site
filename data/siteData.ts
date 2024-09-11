@@ -2,7 +2,12 @@
 // import { RiStackFill } from "react-icons/ri";
 // import { FaChartBar } from "react-icons/fa";
 // import ecommerce1 from "../../public/images/projects/ecommerce-music-app.png";
-// import ecommerce2 from "../../public/images/projects/ecommerce-apple-app.png";
+import happyCustomer from "@/assets/happy-customer.jpg";
+import mobile from "@/assets/mobile.jpg";
+import design from "@/assets/design.jpg";
+import customers from "@/assets/customers.jpg";
+import speed from "@/assets/speed.jpg";
+import support from "@/assets/technology-two.jpg";
 // import ui1 from "../../public/images/projects/ui-design-metaverse.png";
 // import ui2 from "../../public/images/projects/ui-design-hoobank.png";
 // import business1 from "../../public/images/projects/business-gym-site.png";
@@ -332,5 +337,50 @@ export const routes = [
   {
     label: "contact",
     link: "/contact",
+  },
+];
+
+export const clientNeeds = [
+  {
+    title: "User-experienced focused",
+    content:
+      "Your site will be easy enough to customize that anyone can pick it up to make a change big or small, from text changes to adding new pages.",
+    image: happyCustomer,
+    wide: true,
+  },
+  {
+    title: "Mobile optimized",
+    content:
+      "52% of people are viewing websites on a phone. I know it's important that every page is responsive for mobile devices.",
+    image: mobile,
+    wide: false,
+  },
+  {
+    title: "Beautifully designed",
+    content:
+      "Your website won't be from a cookie-cutter layout. It will be designed to beautifully fit the style of your brand from images, colors and more!",
+    image: design,
+    wide: false,
+  },
+  {
+    title: "Client loved",
+    content:
+      "I pay attention to every detail important to my clients in the creation of their website. Also, my clients can expect fast turn-around times, email support and as smooth website build process.",
+    image: customers,
+    wide: true,
+  },
+  {
+    title: "Speed optimized",
+    content:
+      "Your site will be developed with speed optimation and performance in mind.  I believe that no website should be slow for it's users therefore possibly losing out on potential customers",
+    image: speed,
+    wide: true,
+  },
+  {
+    title: "One-stop-shop support",
+    content:
+      "It won't be just a website, I will be one email or call away for any website support you need.  I often help out free of charge it it's a minor issue or quick change.",
+    image: support,
+    wide: false,
   },
 ];

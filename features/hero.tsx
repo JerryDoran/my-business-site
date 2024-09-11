@@ -5,8 +5,8 @@ import Link from "next/link";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Bounded from "./bounded";
-import CTA from "./cta";
+import Bounded from "@/components/bounded";
+import CTA from "@/components/cta";
 import Image from "next/image";
 import hero from "@/assets/hero-image.webp";
 
@@ -19,7 +19,7 @@ export default function Hero() {
         <StarGrid />
 
         <div className="hero-heading">
-          <h1 className="hero-heading text-balance text-5xl font-semibold sm:text-7xl">
+          <h1 className="hero-heading text-balance text-4xl font-semibold sm:text-7xl">
             <span className="heading-gradient">Awesome</span> Websites for Small
             Businesses
           </h1>

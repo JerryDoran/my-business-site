@@ -15,9 +15,9 @@ export default async function Footer() {
         </p>
         <Link
           href="/pricing"
-          className="relative mt-6 inline-flex h-fit w-fit items-center gap-2 rounded-xl border border-violet-200/40 bg-violet-100/20 px-4 py-3 text-base tracking-wider text-violet-100 outline-none ring-violet-300 transition-colors after:absolute hover:border-violet-200/40 hover:bg-violet-500/10 hover:text-violet-400 focus:ring-2 md:px-6 md:text-xl"
+          className="relative mt-6 inline-flex h-fit w-fit items-center gap-2 rounded-xl border border-violet-200/40 bg-violet-100/20 px-4 py-3 text-sm tracking-wider text-violet-100 outline-none ring-violet-300 transition-colors after:absolute hover:border-violet-200/40 hover:bg-violet-500/10 hover:text-violet-400 focus:ring-2 md:px-4"
         >
-          Website Pricing
+          GET YOUR WEBSITE
           <FaArrowRight className="h-4 w-4" />
         </Link>
       </div>
