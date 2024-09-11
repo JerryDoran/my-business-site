@@ -1,6 +1,5 @@
 import Bounded from "@/components/bounded";
 import showcase from "@/assets/showcase-image.png";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { PiArrowsClockwise, PiGear } from "react-icons/pi";
 import Link from "next/link";
