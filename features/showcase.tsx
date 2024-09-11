@@ -1,12 +1,11 @@
 import Bounded from "@/components/bounded";
 import showcase from "@/assets/showcase-image.png";
 import Image from "next/image";
-import { PiArrowsClockwise, PiGear } from "react-icons/pi";
+import { PiGear } from "react-icons/pi";
 import Link from "next/link";
 
 const icons = {
-  gear: <PiGear />,
-  cycle: <PiArrowsClockwise />,
+  gear: <PiGear />
 };
 
 export default function Showcase() {
