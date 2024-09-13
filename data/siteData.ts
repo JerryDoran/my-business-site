@@ -1,6 +1,6 @@
-// import { BiCodeAlt } from "react-icons/bi";
-// import { RiStackFill } from "react-icons/ri";
-// import { FaChartBar } from "react-icons/fa";
+import computer from "@/assets/icons/computer.png";
+import lightBulb from "@/assets/icons/logical-thinking.png";
+import trust from "@/assets/icons/trust.png";
 import thanos from "@/assets/thanos.jpg";
 import happyCustomer from "@/assets/happy-customer.jpg";
 import mobile from "@/assets/mobile.jpg";
@@ -232,5 +232,83 @@ export const clientNeeds = [
       "It won't be just a website, I will be one email or call away for any website support you need.  I often help out free of charge it it's a minor issue or quick change.",
     image: support,
     wide: false,
+  },
+];
+
+export const benefits = [
+  {
+    title: "Boost and grow your online presence",
+    content:
+      "A strong online presence is crucial for small businesses, and I’m here to help you stand out. With a website that's not only visually appealing but also easy to find on search engines, your business will attract more visitors and convert them into loyal customers.",
+    image: computer,
+  },
+  {
+    title: "Save valuable time and reduce stress",
+    content:
+      "Running a small business is already a full-time job—you shouldn’t have to worry about the technical side of your website too. I take care of all the web development details, so you can focus on what you do best, without the headache of trying to figure it all out yourself.",
+    image: lightBulb,
+  },
+  {
+    title: "Tailored solutions that grow with you",
+    content:
+      "Your business is unique, and your website should be too. I create custom solutions that fit your specific needs and can scale as your business grows. Whether you need a simple update or a full redesign, I’m here to help your website evolve with your business.",
+    image: trust,
+  },
+];
+
+export const faqs = [
+  {
+    id: 1,
+    question: "How long does it take to build a website?",
+    answer:
+      "The timeline depends on the size and complexity of your site. A simple website might take a few weeks, while a more complex project could take a couple of months. I’ll give you a clear timeline once we discuss your needs.",
+  },
+  {
+    id: 2,
+    question: "How much does it cost to build a website?",
+    answer:
+      "The cost varies based on the features you need, the design complexity, and any special functionality. I offer different packages to fit various budgets and will provide a detailed quote after we chat about your project.",
+  },
+  {
+    id: 3,
+    question: "Do I need to provide content and images?",
+    answer:
+      "It’s great if you have your own content and images, but if not, no worries! I can help with copywriting, and we can source high-quality images that fit your brand.",
+  },
+  {
+    id: 4,
+    question: "Can you help with SEO?",
+    answer:
+      "Yes! I ensure that your website is optimized for search engines from the start, helping your site rank better in search results and attract more visitors.",
+  },
+  {
+    id: 5,
+    question: "Will I be able to update the website myself?",
+    answer:
+      "Definitely. I build sites with user-friendly content management systems (CMS) like Prismic or Contenful, so you can easily make updates. I’ll also provide training if you need it. I can also make updates to your site for you for a small maintenance fee",
+  },
+  {
+    id: 6,
+    question: "How long does it take to build a website?",
+    answer:
+      "The timeline depends on the size and complexity of your site. A simple website might take a few weeks, while a more complex project could take a couple of months. I’ll give you a clear timeline once we discuss your needs.",
+  },
+  {
+    id: 7,
+    question: "What happens if my website needs fixed after it’s live?",
+    answer:
+      "I offer ongoing support and maintenance packages to keep your website running smoothly. If anything goes wrong, I’m just an email or a phone call away to help you out.",
+  },
+  {
+    id: 8,
+    question: "Can you redesign my existing website?",
+    answer:
+      "Of course! Whether you need a complete overhaul or just a few tweaks to modernize your site, I can help refresh your online presence and make it work better for your business.",
+  },
+  {
+    id: 9,
+    question: "Whats the website building process?",
+    answer:
+      "We meet via a video call, or a phone call to discuss your website and what you’re looking for. I build out the website with your content based on your requirements. I send you a private link to your new website built out, and you can then send any revisions or changes you want me to make. There are usually 2 sets of revisions. Once perfected, I launch the website!",
   },
 ];

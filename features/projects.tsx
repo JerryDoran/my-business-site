@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Projects() {
   const featuredProjects = projects.filter((project) => project.isFeatured);
-  console.log(featuredProjects);
+
   return (
     <Bounded>
       <div className="hero-heading">
