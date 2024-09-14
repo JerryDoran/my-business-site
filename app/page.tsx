@@ -1,5 +1,6 @@
 import Benefits from "@/features/benefits";
 import ClientNeeds from "@/features/client-needs";
+import ContactForm from "@/features/contact-form";
 import FAQ from "@/features/faq";
 import Hero from "@/features/hero";
 import Projects from "@/features/projects";
@@ -16,6 +17,7 @@ export default function Home() {
       <Benefits />
       <FAQ />
       <Social />
+      <ContactForm />
     </div>
   );
 }
