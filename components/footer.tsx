@@ -108,7 +108,7 @@ export default async function Footer() {
       <div className="flex flex-col max-md:items-center">
         <h3 className="text-lg">Contact Me</h3>
         <ul className="prose mt-4 list-none text-white/60 max-md:text-center">
-          <li>maestrocodingpro@gmail.com</li>
+          <li>jmdwebtechnologies@gmail.com</li>
           <li>Youngstown, OH</li>
         </ul>
       </div>
