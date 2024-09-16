@@ -312,3 +312,24 @@ export const faqs = [
       "We meet via a video call, or a phone call to discuss your website and what you’re looking for. I build out the website with your content based on your requirements. I send you a private link to your new website built out, and you can then send any revisions or changes you want me to make. There are usually 2 sets of revisions. Once perfected, I launch the website!",
   },
 ];
+
+export const testimonials = [
+  {
+    name: "John Doe",
+    company: "Acme Inc.",
+    testimonial:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+  },
+  {
+    name: "Jane Doe",
+    company: "Microsoft",
+    testimonial:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+  },
+  {
+    name: "Tony Stark",
+    company: "Stark Industries",
+    testimonial:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+  },
+];

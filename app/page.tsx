@@ -6,6 +6,7 @@ import Hero from "@/features/hero";
 import Projects from "@/features/projects";
 import Showcase from "@/features/showcase";
 import Social from "@/features/social";
+import Testimonials from "@/features/testimonials";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <Projects />
       <Benefits />
       <FAQ />
-      <Social />
+      <Testimonials />
       <ContactForm />
+      <Social />
     </div>
   );
 }

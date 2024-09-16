@@ -4,10 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import Image from "next/image";
+import logo from "@/assets/icon.png";
 
 export default function ContactForm() {
   return (
-    <Bounded className="mt-8">
+    <Bounded className="">
       <h1 className="mb-8 text-balance text-4xl font-semibold sm:text-7xl">
         <span className="heading-gradient">Contact</span> me
       </h1>
@@ -18,9 +20,13 @@ export default function ContactForm() {
             className="mt-5 flex flex-col gap-y-4"
             method="POST"
           >
-            <h2 className="prose prose-invert mb-6 text-2xl font-semibold">
-              Let’s kick off a chat about your website project!
-            </h2>
+            <div className="mb-6 flex flex-col items-center gap-4 md:flex-row">
+              <Image src={logo} alt="logo" width={40} height={40} />
+              <h2 className="prose prose-invert text-base font-semibold max-md:text-center md:text-2xl">
+                Let’s kick off a chat about your website project!
+              </h2>
+            </div>
+
             <div className="flex flex-col justify-between gap-4 md:flex-row">
               <div className="grid flex-1 space-y-2">
                 <Label>Name</Label>
