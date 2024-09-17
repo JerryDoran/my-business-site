@@ -8,7 +8,7 @@ export default function Testimonials() {
       <h1 className="text-balance text-4xl font-semibold sm:text-7xl">
         <span className="heading-gradient">Client</span> testimonials
       </h1>
-      <p className="prose prose-invert mt-6 text-balance text-xl text-slate-300 md:text-2xl">
+      <p className="prose prose-invert mt-2 text-balance text-xl text-slate-300 md:text-2xl">
         Read what others are saying
       </p>
 
