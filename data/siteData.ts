@@ -315,13 +315,13 @@ export const faqs = [
 
 export const testimonials = [
   {
-    name: "John Doe",
-    company: "Acme Inc.",
+    name: "Thomas Ellsmore",
+    company: "Tommy Stumps LLC",
     testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+      "The website is amazing and I'm especially impressed with how great it looks on my phone! The image gallery page is perfect and exactly the way I envisioned. Thank you so much for all you've done - I couldn't be happier with the result!",
   },
   {
-    name: "Jane Doe",
+    name: "John Doe",
     company: "Microsoft",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
