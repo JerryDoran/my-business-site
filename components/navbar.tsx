@@ -31,6 +31,16 @@ export default function Navbar({
 
     window.addEventListener("scroll", changeColor);
   }, []);
+
+  function handleOpen() {
+    const delay = (time: number) =>
+      new Promise((resolve) => setTimeout(resolve, time));
+    async function sleep() {
+      await delay(10);
+      setOpen(!open);
+    }
+    sleep();
+  }
   return (
     <header className="w-full bg-[#070815] transition">
       <nav
@@ -51,7 +61,7 @@ export default function Navbar({
                     key={route.label}
                     className="group relative flex cursor-pointer items-center gap-1"
                   >
-                    <li className="inline-flex min-h-11 items-center text-[18px] transition hover:text-gray-400">
+                    <li className="inline-flex min-h-11 items-center text-lg transition hover:text-gray-400">
                       {route.label}
                     </li>
                     <MdOutlineKeyboardArrowDown className="size-6" />
@@ -82,7 +92,7 @@ export default function Navbar({
                   <Link
                     href={route.link}
                     className={cn(
-                      "inline-flex min-h-11 items-center text-[18px] transition hover:text-gray-400",
+                      "inline-flex min-h-11 items-center text-lg transition hover:text-gray-400",
                       route.link === pathname ? "text-violet-400" : "",
                     )}
                   >
@@ -110,8 +120,10 @@ export default function Navbar({
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              // transition={{ duration: 0.2 }}
-              exit={{ opacity: 0 }}
+              // transition={{ ease: "easeInOut", duration: 0.2 }}
+              exit={{
+                opacity: 0,
+              }}
               className="absolute right-0 top-20 z-10 h-screen w-full bg-black md:hidden"
             >
               <div className="relative flex h-full items-center justify-center pb-28 text-xl font-semibold first-letter:flex-col">
@@ -147,17 +159,17 @@ export default function Navbar({
                                 className="w-fit"
                               >
                                 <ul className="flex flex-col gap-1 text-base">
-                                  <li className="transform rounded-lg p-2 pl-4 font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
+                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
                                     <Link href="/custom-websites">
                                       Custom Websites
                                     </Link>
                                   </li>
-                                  <li className="transform rounded-lg p-2 pl-4 font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
+                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
                                     <Link href="/applications">
                                       Web Applications
                                     </Link>
                                   </li>
-                                  <li className="transform rounded-lg p-2 pl-4 font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
+                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
                                     <Link href="/advanced">
                                       Advanced Custom Software
                                     </Link>
@@ -177,7 +189,7 @@ export default function Navbar({
                             "inline-flex min-h-11 items-center text-xl transition hover:text-gray-400",
                             route.link === pathname ? "text-violet-400" : "",
                           )}
-                          onClick={() => setOpen(!open)}
+                          onClick={handleOpen}
                         >
                           {route.label}
                         </Link>

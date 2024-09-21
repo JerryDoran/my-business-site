@@ -33,7 +33,7 @@ export default function RootLayout({
     >
       <body className="bg-[#070815] text-white/90 transition-all">
         <Header />
-        <main className="overflow-x-hidden">{children}</main>
+        <main className="no-scrollbar overflow-x-hidden">{children}</main>
         <Footer />
         <Copyright />
       </body>
