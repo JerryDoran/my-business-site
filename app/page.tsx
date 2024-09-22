@@ -18,7 +18,7 @@ export default function Home() {
       <Benefits />
       <FAQ />
       <Testimonials />
-      <ContactForm />
+      <ContactForm title="Let’s kick off a chat about your website project!" />
       <Social />
     </div>
   );

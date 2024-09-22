@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import logo from "@/assets/icon.png";
 
-export default function ContactForm() {
+export default function ContactForm({ title }: { title: string }) {
   return (
     <Bounded className="">
       <h1 className="mb-8 text-balance text-4xl font-semibold sm:text-7xl">
@@ -23,7 +23,7 @@ export default function ContactForm() {
             <div className="mb-6 flex flex-col items-center gap-4 md:flex-row">
               <Image src={logo} alt="logo" width={40} height={40} />
               <h2 className="prose prose-invert text-base font-semibold max-md:text-center md:text-2xl">
-                Let’s kick off a chat about your website project!
+                {title}
               </h2>
             </div>
 
