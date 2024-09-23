@@ -17,7 +17,6 @@ export default function Hero() {
     <Bounded className="">
       <div className="relative mt-8" ref={containerRef}>
         <StarGrid />
-
         <div className="hero-heading">
           <h1 className="hero-heading text-balance text-4xl font-semibold sm:text-7xl">
             <span className="heading-gradient">Awesome</span> Websites for Small
