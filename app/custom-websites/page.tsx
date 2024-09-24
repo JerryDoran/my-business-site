@@ -1,7 +1,6 @@
 import Bounded from "@/components/bounded";
 import StarGrid from "@/components/star-grid";
 import Image from "next/image";
-import Link from "next/link";
 import custom from "@/assets/custom.jpg";
 import CTA from "@/components/cta";
 
