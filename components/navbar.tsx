@@ -76,9 +76,10 @@ export default function Navbar({
                             <Link href="/applications">Web Applications</Link>
                           </li>
                           <li className="transform rounded-lg p-2 pl-4 transition duration-100 hover:scale-105 hover:bg-blue-600/20">
-                            <Link href="/advanced">
-                              Advanced Custom Software
-                            </Link>
+                            <Link href="/advanced">Advanced Software</Link>
+                          </li>
+                          <li className="transform rounded-lg p-2 pl-4 transition duration-100 hover:scale-105 hover:bg-blue-600/20">
+                            <Link href="/support">Support & Maintenance</Link>
                           </li>
                         </ul>
                       </div>
@@ -159,19 +160,24 @@ export default function Navbar({
                                 className="w-fit"
                               >
                                 <ul className="flex flex-col gap-1 text-base">
-                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
+                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium transition duration-100 hover:scale-105 hover:bg-blue-600/30">
                                     <Link href="/custom-websites">
                                       Custom Websites
                                     </Link>
                                   </li>
-                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
+                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium transition duration-100 hover:scale-105 hover:bg-blue-600/30">
                                     <Link href="/applications">
                                       Web Applications
                                     </Link>
                                   </li>
-                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium duration-100 hover:scale-105 hover:bg-blue-600/30">
-                                    <Link href="/advanced">
-                                      Advanced Custom Software
+                                  <li className="transform rounded-lg p-2 pl-4 text-lg transition duration-100 hover:scale-105 hover:bg-blue-600/30">
+                                    <Link href="/advanced-software">
+                                      Advanced Software
+                                    </Link>
+                                  </li>
+                                  <li className="transform rounded-lg p-2 pl-4 text-lg font-medium transition duration-100 hover:scale-105 hover:bg-blue-600/30">
+                                    <Link href="/support">
+                                      Support & Maintenance
                                     </Link>
                                   </li>
                                 </ul>
