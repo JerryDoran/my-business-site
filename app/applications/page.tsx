@@ -4,7 +4,7 @@ import Image from "next/image";
 import custom from "@/assets/custom.jpg";
 import CTA from "@/components/cta";
 
-export default async function CustomWebsitesPage() {
+export default async function ApplicationsPage() {
   return (
     <Bounded className="p-6">
       <div className="relative mt-8">

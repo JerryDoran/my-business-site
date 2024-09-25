@@ -41,14 +41,7 @@ export default async function Footer() {
                 About
               </Link>
             </li>
-            <li>
-              <Link
-                href="/services"
-                className="text-white/60 no-underline transition hover:text-white"
-              >
-                Services
-              </Link>
-            </li>
+            
             <li>
               <Link
                 href="/projects"
@@ -73,34 +66,34 @@ export default async function Footer() {
         <ul className="prose mt-4 max-md:text-center">
           <li>
             <Link
-              href="/"
+              href="/custom-websites"
               className="text-white/60 no-underline transition hover:text-white"
             >
-              Web Design and Development
+              Custom Websites
             </Link>
           </li>
           <li>
             <Link
-              href="/about"
+              href="/applications"
               className="text-white/60 no-underline transition hover:text-white"
             >
-              Custom App Development
+              Web Applications
             </Link>
           </li>
           <li>
             <Link
-              href="/services"
+              href="/advanced"
               className="text-white/60 no-underline transition hover:text-white"
             >
-              Deployment
+              Advanced Software
             </Link>
           </li>
           <li>
             <Link
-              href="/projects"
+              href="/support"
               className="text-white/60 no-underline transition hover:text-white"
             >
-              Maintenance
+              Support & Maintenance
             </Link>
           </li>
         </ul>

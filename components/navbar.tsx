@@ -161,22 +161,31 @@ export default function Navbar({
                               >
                                 <ul className="flex flex-col gap-1 text-base">
                                   <li className="transform rounded-lg p-2 pl-4 text-lg font-medium transition duration-100 hover:scale-105 hover:bg-blue-600/30">
-                                    <Link href="/custom-websites">
+                                    <Link
+                                      href="/custom-websites"
+                                      onClick={handleOpen}
+                                    >
                                       Custom Websites
                                     </Link>
                                   </li>
                                   <li className="transform rounded-lg p-2 pl-4 text-lg font-medium transition duration-100 hover:scale-105 hover:bg-blue-600/30">
-                                    <Link href="/applications">
+                                    <Link
+                                      href="/applications"
+                                      onClick={handleOpen}
+                                    >
                                       Web Applications
                                     </Link>
                                   </li>
                                   <li className="transform rounded-lg p-2 pl-4 text-lg transition duration-100 hover:scale-105 hover:bg-blue-600/30">
-                                    <Link href="/advanced-software">
+                                    <Link
+                                      href="/advanced-software"
+                                      onClick={handleOpen}
+                                    >
                                       Advanced Software
                                     </Link>
                                   </li>
                                   <li className="transform rounded-lg p-2 pl-4 text-lg font-medium transition duration-100 hover:scale-105 hover:bg-blue-600/30">
-                                    <Link href="/support">
+                                    <Link href="/support" onClick={handleOpen}>
                                       Support & Maintenance
                                     </Link>
                                   </li>
