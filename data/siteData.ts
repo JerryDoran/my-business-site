@@ -17,6 +17,10 @@ import crypto from "@/assets/business-crypto-tracker.png";
 import beach from "@/assets/beach-1.png";
 import apple from "@/assets/ecommerce-apple-app.png";
 import realty from "@/assets/realty-2.png";
+import brandAssets from "@/assets/custom-websites/brand-assets.svg";
+import seo from "@/assets/custom-websites/technical-seo-2.svg";
+import brandLibrary from "@/assets/custom-websites/brand-library.svg";
+import development from "@/assets/custom-websites/development-1.svg";
 
 export const projects = [
   {
@@ -331,5 +335,32 @@ export const testimonials = [
     company: "Stark Industries",
     testimonial:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+  },
+];
+
+export const customWebsites = [
+  {
+    title: "Enhanced User Experience",
+    content:
+      "I make it super easy for your customers to check out your services, no matter what device they're using.",
+    image: brandAssets,
+  },
+  {
+    title: "Advanced Functionality",
+    content:
+      "Level up your business game by adding features such as payment gateways and automation to your site.",
+    image: seo,
+  },
+  {
+    title: "Fully Custom Design",
+    content:
+      "Engage your users right away with interactive elements and beautifully orchestrated animations.",
+    image: brandLibrary,
+  },
+  {
+    title: "Scalable Development",
+    content:
+      "Your website will be ready to grow with your business and stay flexible for whatever comes next.",
+    image: development,
   },
 ];

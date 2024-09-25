@@ -1,8 +1,15 @@
+import { customWebsites } from "@/data/siteData";
 import Bounded from "@/components/bounded";
 import StarGrid from "@/components/star-grid";
 import Image from "next/image";
 import custom from "@/assets/custom.jpg";
 import CTA from "@/components/cta";
+import { Lato } from "next/font/google";
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Add the weights you need
+});
 
 export default async function CustomWebsitesPage() {
   return (
@@ -32,6 +39,41 @@ export default async function CustomWebsitesPage() {
             <div className="hero-glow absolute inset-0 -z-10 bg-blue-500/10 blur-2xl filter" />
             <Image src={custom} alt="custom-website" height={300} width={600} />
           </div>
+        </div>
+      </div>
+      <div className="mx-auto mt-40 flex w-full flex-col items-center gap-y-4">
+        <div
+          className={`${lato.className} flex items-center gap-x-2 text-sm uppercase tracking-wider`}
+        >
+          <hr className="w-4" /> Exceptional Digital Experiences{" "}
+          <hr className="w-4" />
+        </div>
+        <h2 className="font text-center text-4xl font-semibold">
+          Tailored Websites That Drive Engagement
+        </h2>
+        <p className="prose prose-invert mt-2 w-3/4 text-balance text-center text-lg">
+          I create custom brand websites while implementing innovative features
+          that enhance user interaction and boost your bottom line.
+        </p>
+        <div className="mt-12 grid grid-cols-1 items-stretch gap-16 transition-all md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {customWebsites.map((item) => (
+            <div
+              className="mx-auto flex w-[300px] flex-col items-center gap-y-4 py-6 transition hover:scale-105 max-md:w-full"
+              key={item.title}
+            >
+              <Image
+                src={item.image}
+                alt="custom website service"
+                className="w-1/2"
+              />
+              <h2 className="text-center text-2xl font-semibold">
+                {item.title}
+              </h2>
+              <p className="prose prose-invert text-center text-lg text-gray-400">
+                {item.content}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </Bounded>
