@@ -28,7 +28,7 @@ export default async function WebApplicationsPage() {
             <div className="w-3/4 text-slate-300">
               <p className="prose prose-invert mt-4 text-xl md:text-2xl">
                 Whether you&apos;re starting from scratch or need help getting
-                things back on track, I’ve got you covered:
+                things back on track, I’ve got you covered!
               </p>
               <p className="prose prose-invert mt-4 text-xl md:text-2xl">
                 Custom Software Development: I’ll build software tailored
@@ -59,7 +59,7 @@ export default async function WebApplicationsPage() {
         <h2 className="font text-center text-4xl font-semibold">
           Custom Web Application Services
         </h2>
-        <p className="prose prose-invert mt-2 w-3/4 text-balance text-center text-lg md:text-xl">
+        <p className="prose prose-invert mt-2 w-3/4 text-center text-lg md:text-xl">
           Let’s work together to make your software work for you! Whether you
           need to build something new or improve and upgrade your current
           software, I&apos;ve got you covered.

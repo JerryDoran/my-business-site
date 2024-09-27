@@ -54,7 +54,7 @@ export default async function SupportPage() {
         <h2 className="font text-center text-4xl font-semibold">
           Ensure your software runs the way you do
         </h2>
-        <p className="prose prose-invert mt-2 w-3/4 text-balance text-center text-lg md:text-xl">
+        <p className="prose prose-invert mt-2 w-3/4 text-center text-lg md:text-xl">
           Add new features and expand support for your software! I can team up
           with you or handle everything myself to keep things running smoothly
           and up-to-date.
