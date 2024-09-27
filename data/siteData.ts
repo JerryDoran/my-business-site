@@ -21,6 +21,16 @@ import brandAssets from "@/assets/custom-websites/brand-assets.svg";
 import seo from "@/assets/custom-websites/technical-seo-2.svg";
 import brandLibrary from "@/assets/custom-websites/brand-library.svg";
 import development from "@/assets/custom-websites/development-1.svg";
+import credit from "@/assets/custom-websites/credit-card.svg";
+import search from "@/assets/custom-websites/search-1.svg";
+import code from "@/assets/custom-websites/code-1.svg";
+import designSite from "@/assets/custom-websites/web-design-1.svg";
+import reporting from "@/assets/applications/reporting-1.svg";
+import results from "@/assets/applications/results-1.svg";
+import science from "@/assets/applications/science.svg";
+import platform from "@/assets/applications/platform-1.svg";
+import gears from "@/assets/applications/gears-2.svg";
+import pageAudits from "@/assets/applications/page-audits.svg";
 
 export const projects = [
   {
@@ -362,5 +372,80 @@ export const customWebsites = [
     content:
       "Your website will be ready to grow with your business and stay flexible for whatever comes next.",
     image: development,
+  },
+];
+
+export const coreWebServices = [
+  {
+    title: "Ecommerce Websites",
+    content:
+      "Generate more sales with an ecommerce website that turns prospects into repeat customers..",
+    image: credit,
+  },
+  {
+    title: "Web-Based Applications",
+    content:
+      "Design a modern user-focused site that increases user accessibility and satisfaction.",
+    image: designSite,
+  },
+  {
+    title: "Advanced Site Search",
+    content:
+      "Make it easier for users to find what they need by enhancing sitewide search capabilities.",
+    image: search,
+  },
+  {
+    title: "Advanced Website Functionalities",
+    content:
+      "Incorporate additional functionality into your website to provide an exceptional user experience.",
+    image: code,
+  },
+];
+
+export const applicationAreas = [
+  {
+    title: "Tech & Business Know-How",
+    content:
+      "With my solid grasp of software technologies, I’ll help keep your business moving forward.",
+    image: platform,
+  },
+  {
+    title: "Web-Based Applications",
+    content:
+      "I build custom web apps that streamline your business and enhance user experiences.",
+    image: gears,
+  },
+  {
+    title: "Reporting & Analytics",
+    content:
+      "I create custom reports and help you make smart, data-driven decisions for your business.",
+    image: pageAudits,
+  },
+];
+
+export const applicationServices = [
+  {
+    title: "Back Office Systems",
+    content:
+      "Custom-built software that fits your exact business needs. Streamline workflows, improve quality, and maximize efficiency.",
+    image: results,
+  },
+  {
+    title: "API Development",
+    content:
+      "Having your website fetch data from an API lets you provide real-time information, keeping content fresh and relevant for customers.",
+    image: science,
+  },
+  {
+    title: "Reporting",
+    content:
+      "Make data-driven decisions that contribute to growth. Leverage business intelligence dashboards & reporting services.",
+    image: reporting,
+  },
+  {
+    title: "Software Automation",
+    content:
+      "Reduce manual efforts and costs by automating key business processes to save you valuable time and effort.",
+    image: gears,
   },
 ];

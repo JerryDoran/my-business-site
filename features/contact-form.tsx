@@ -9,7 +9,7 @@ import logo from "@/assets/icon.png";
 
 export default function ContactForm({ title }: { title: string }) {
   return (
-    <Bounded className="">
+    <Bounded className="w-full">
       <h1 className="mb-8 text-balance text-4xl font-semibold sm:text-7xl">
         <span className="heading-gradient">Contact</span> me
       </h1>

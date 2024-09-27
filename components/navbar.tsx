@@ -75,9 +75,7 @@ export default function Navbar({
                           <li className="transform rounded-lg p-2 pl-4 transition duration-100 hover:scale-105 hover:bg-blue-600/20">
                             <Link href="/applications">Web Applications</Link>
                           </li>
-                          <li className="transform rounded-lg p-2 pl-4 transition duration-100 hover:scale-105 hover:bg-blue-600/20">
-                            <Link href="/advanced">Advanced Software</Link>
-                          </li>
+
                           <li className="transform rounded-lg p-2 pl-4 transition duration-100 hover:scale-105 hover:bg-blue-600/20">
                             <Link href="/support">Support & Maintenance</Link>
                           </li>
@@ -174,14 +172,6 @@ export default function Navbar({
                                       onClick={handleOpen}
                                     >
                                       Web Applications
-                                    </Link>
-                                  </li>
-                                  <li className="transform rounded-lg p-2 pl-4 text-lg transition duration-100 hover:scale-105 hover:bg-blue-600/30">
-                                    <Link
-                                      href="/advanced-software"
-                                      onClick={handleOpen}
-                                    >
-                                      Advanced Software
                                     </Link>
                                   </li>
                                   <li className="transform rounded-lg p-2 pl-4 text-lg font-medium transition duration-100 hover:scale-105 hover:bg-blue-600/30">
