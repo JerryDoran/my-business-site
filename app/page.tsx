@@ -18,7 +18,10 @@ export default function Home() {
       <Benefits />
       <FAQ />
       <Testimonials />
-      <ContactForm title="Let’s kick off a chat about your website project!" />
+      <ContactForm
+        title="Let’s kick off a chat about your website project!"
+        className="mx-auto mb-16 max-w-7xl px-6"
+      />
       <Social />
     </div>
   );

@@ -6,10 +6,17 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import logo from "@/assets/icon.png";
+import { cn } from "@/lib/utils";
 
-export default function ContactForm({ title }: { title: string }) {
+export default function ContactForm({
+  title,
+  className,
+}: {
+  title: string;
+  className?: string;
+}) {
   return (
-    <Bounded className="w-full">
+    <div className={cn("mt-10 w-full", className)}>
       <h1 className="mb-8 text-balance text-4xl font-semibold sm:text-7xl">
         <span className="heading-gradient">Contact</span> me
       </h1>
@@ -68,6 +75,6 @@ export default function ContactForm({ title }: { title: string }) {
           </form>
         </CardContent>
       </Card>
-    </Bounded>
+    </div>
   );
 }

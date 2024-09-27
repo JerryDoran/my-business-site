@@ -31,6 +31,13 @@ import science from "@/assets/applications/science.svg";
 import platform from "@/assets/applications/platform-1.svg";
 import gears from "@/assets/applications/gears-2.svg";
 import pageAudits from "@/assets/applications/page-audits.svg";
+import support1 from "@/assets/support/support-1.svg";
+import support2 from "@/assets/support/support-2.svg";
+import integration from "@/assets/support/integration-1.svg";
+import education from "@/assets/support/education.svg";
+import coding from "@/assets/support/coding-1.svg";
+import chart from "@/assets/support/chart-2-1.svg";
+import advanced from "@/assets/support/advanced-1.svg";
 
 export const projects = [
   {
@@ -446,6 +453,60 @@ export const applicationServices = [
     title: "Software Automation",
     content:
       "Reduce manual efforts and costs by automating key business processes to save you valuable time and effort.",
+    image: gears,
+  },
+];
+
+export const supportAreas = [
+  {
+    title: "Website Maintenance",
+    content:
+      "Improve performance, and achieve greater efficiency with my ongoing support and proactive services.",
+    image: support2,
+  },
+  {
+    title: "Technology Support",
+    content:
+      "Keep your software up to date by adding new features, improving functionality, and using the latest tech!",
+    image: support1,
+  },
+  {
+    title: "Software Upgrades",
+    content:
+      "Let’s modernize, rebuild, or replace your system to make it easier for you and your customers and better fit your business goals.",
+    image: coding,
+  },
+  {
+    title: "Training",
+    content:
+      "I offer personalized training to help you easily manage, update, and optimize your website without any technical headaches.",
+    image: education,
+  },
+];
+
+export const supportServices = [
+  {
+    title: "Re-Designed Overhauls",
+    content:
+      "Redesign an outdated-looking website to get your website looking fresh and modern.",
+    image: integration,
+  },
+  {
+    title: "Text & Content Updates",
+    content:
+      "Text and images updates area a great way to keep your website up-to-date and accurate.",
+    image: chart,
+  },
+  {
+    title: "Bug Fixes",
+    content:
+      "Fix any weird bugs that you may be experiencing with your website.",
+    image: advanced,
+  },
+  {
+    title: "Add New Pages & Posts",
+    content:
+      "And new posts or responsive custom laid out pages to your website.",
     image: gears,
   },
 ];
