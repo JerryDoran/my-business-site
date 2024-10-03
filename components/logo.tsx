@@ -6,7 +6,7 @@ export default function Logo() {
   return (
     <Link href="/" className="flex items-center gap-x-3">
       <Image src={logo} alt="my logo" width={40} height={40} />
-      <p className="text-2xl font-semibold">Web Maestro</p>
+      <p className="text-2xl font-semibold">TheWebArchitech</p>
     </Link>
   );
 }

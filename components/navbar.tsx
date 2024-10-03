@@ -201,7 +201,10 @@ export default function Navbar({
                       </li>
                     );
                   })}
-                  <CTA className="ml-0 mt-20 flex px-4 py-3" />
+                  <CTA
+                    className="ml-0 mt-20 flex px-4 py-3"
+                    onClick={handleOpen}
+                  />
                 </ul>
               </div>
             </motion.div>
