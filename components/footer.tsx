@@ -41,7 +41,7 @@ export default async function Footer() {
                 About
               </Link>
             </li>
-            
+
             <li>
               <Link
                 href="/projects"
@@ -80,14 +80,14 @@ export default async function Footer() {
               Web Applications
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/advanced"
               className="text-white/60 no-underline transition hover:text-white"
             >
               Advanced Software
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/support"
