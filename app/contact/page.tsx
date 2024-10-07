@@ -2,8 +2,6 @@ import Bounded from "@/components/bounded";
 import StarGrid from "@/components/star-grid";
 import Image from "next/image";
 import build from "@/assets/build.jpg";
-import CTA from "@/components/cta";
-import { Lato } from "next/font/google";
 import ContactForm from "@/features/contact-form";
 
 export default async function ContactPage() {
