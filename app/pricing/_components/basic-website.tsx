@@ -52,7 +52,7 @@ export default function BasicWebsiteCard() {
           $500 - $1000
         </span>
       </p>
-      <div className=""></div>
+
       <Link
         href="/contact"
         className="flex items-center justify-center gap-2 rounded-lg bg-gradient-to-br from-indigo-900 to-indigo-400 px-4 py-2 transition hover:opacity-90"

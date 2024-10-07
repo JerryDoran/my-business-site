@@ -49,10 +49,10 @@ export default function CustomAppCard() {
       <hr className="mt-8 border-neutral-700" />
 
       <p className="mb-8 flex items-center justify-center gap-2 pt-4">
-        <span className="text-3xl font-semibold text-neutral-100">$5,000+</span>
+        <span className="text-3xl font-semibold text-neutral-100">$3,000+</span>
         <span className="text-sm">(based on complexity)</span>
       </p>
-      <div></div>
+
       <Link
         href="/contact"
         className="flex items-center justify-center gap-2 rounded-lg bg-gradient-to-br from-indigo-900 to-indigo-400 px-4 py-2 transition hover:opacity-90"

@@ -20,7 +20,7 @@ export default async function CustomWebsitesPage() {
         <StarGrid />
         <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-6">
           <div className="flex flex-1 flex-col gap-y-2 max-lg:items-center max-lg:text-center">
-            <h1 className="text-balance text-4xl font-semibold sm:text-5xl">
+            <h1 className="text-balance text-4xl font-semibold sm:text-6xl">
               <span className="heading-gradient">Design</span> Your Digital
               Brand
             </h1>
