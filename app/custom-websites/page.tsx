@@ -25,7 +25,7 @@ export default async function CustomWebsitesPage() {
               Brand
             </h1>
 
-            <div className="w-3/4 text-slate-300">
+            <div className="w-[90%] text-slate-300">
               <p className="prose prose-invert mt-4 text-xl md:text-2xl">
                 I craft custom websites and optimize leading CMS platforms to
                 bring your vision to life.
@@ -43,8 +43,9 @@ export default async function CustomWebsitesPage() {
               src={custom}
               alt="custom-website"
               height={300}
-              width={600}
-              className="rounded-lg"
+              width={650}
+              className="h-auto w-auto rounded-lg"
+              priority
             />
           </div>
         </div>

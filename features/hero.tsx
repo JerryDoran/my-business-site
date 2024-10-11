@@ -49,6 +49,7 @@ export default function Hero() {
             src={hero}
             fill
             alt="hero image"
+            priority
           />
         </div>
       </div>

@@ -25,7 +25,7 @@ export default async function WebApplicationsPage() {
               your business needs
             </h1>
 
-            <div className="w-3/4 text-slate-300">
+            <div className="w-[90%] text-slate-300">
               <p className="prose prose-invert mt-4 text-xl md:text-2xl">
                 Whether you&apos;re starting from scratch or need help getting
                 things back on track, I’ve got you covered!
@@ -43,7 +43,7 @@ export default async function WebApplicationsPage() {
               src={applications}
               alt="custom-website"
               height={300}
-              width={600}
+              width={650}
               className="rounded-lg"
             />
           </div>

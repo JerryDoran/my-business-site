@@ -33,14 +33,16 @@ export default async function PricingPage() {
           <CustomAppCard />
         </div>
         <div className="mt-10">
-          <h2 className="text-2xl">Add-ons (Optional for all plans):</h2>
-          <ul className="mt-4 flex flex-col gap-2 text-sm text-neutral-300">
+          <h2 className="text-2xl">
+            Add-ons <span className="text-base">(Optional for all plans)</span>
+          </h2>
+          <ul className="ml-4 mt-4 flex list-disc flex-col gap-2 text-base text-neutral-300">
             <li>
               Ongoing website maintenance, hosting, domain management and
-              updates: $100 - $300/month
+              updates: $30 - $50/month
             </li>
             <li>Additional pages: $100 per page</li>
-            <li>Custom logo design: $250+</li>
+            <li>Custom logo design: $100+</li>
           </ul>
           <p className="mt-4">
             *These pricing tiers provide flexibility for clients with different

@@ -203,7 +203,7 @@ export const routes = [
   },
   {
     label: "portfolio",
-    link: "/portfolio",
+    link: "/projects",
   },
   {
     label: "contact",

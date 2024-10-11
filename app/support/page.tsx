@@ -22,10 +22,10 @@ export default async function SupportPage() {
           <div className="flex flex-1 flex-col gap-y-2 max-lg:items-center max-lg:text-center">
             <h1 className="text-balance text-4xl font-semibold sm:text-6xl">
               <span className="heading-gradient">Support</span> and maintence
-              for continued success.
+              for continued success
             </h1>
 
-            <div className="w-3/4 text-slate-300">
+            <div className="w-[90%] text-slate-300">
               <p className="prose prose-invert mt-4 text-xl md:text-2xl">
                 I will help support your ongoing business needs and can provide
                 new features to ensure your website continues performing.
@@ -39,7 +39,7 @@ export default async function SupportPage() {
               src={techSupport}
               alt="custom-website"
               height={300}
-              width={600}
+              width={650}
               className="rounded-lg"
             />
           </div>
