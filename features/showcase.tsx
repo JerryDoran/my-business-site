@@ -5,7 +5,7 @@ import { PiGear } from "react-icons/pi";
 import Link from "next/link";
 
 const icons = {
-  gear: <PiGear />
+  gear: <PiGear />,
 };
 
 export default function Showcase() {
@@ -13,8 +13,8 @@ export default function Showcase() {
     <Bounded className="relative">
       <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter" />
       <h1 className="text-balance text-4xl font-semibold sm:text-7xl">
-        <span className="heading-gradient">Creating</span> websites with user
-        experience in mind
+        <span className="heading-gradient">Crafting</span> beautiful and
+        user-friendly websites
       </h1>
       <div className="mx-auto mt-10 grid max-w-[70rem] grid-cols-1 items-center rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 pl-10 backdrop-blur-sm md:mt-16 lg:grid-cols-2 lg:py-12 xl:grid-cols-3">
         <div>

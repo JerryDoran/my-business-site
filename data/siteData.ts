@@ -386,7 +386,7 @@ export const coreWebServices = [
   {
     title: "Ecommerce Websites",
     content:
-      "Generate more sales with an ecommerce website that turns prospects into repeat customers..",
+      "Generate more sales with an ecommerce website that turns prospects into repeat customers.",
     image: credit,
   },
   {
@@ -494,7 +494,7 @@ export const supportServices = [
   {
     title: "Text & Content Updates",
     content:
-      "Text and images updates area a great way to keep your website up-to-date and accurate.",
+      "Text and image updates area a great way to keep your website up-to-date and accurate.",
     image: chart,
   },
   {

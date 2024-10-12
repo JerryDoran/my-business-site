@@ -21,7 +21,7 @@ export default async function ContactPage() {
                 Hi, I&apos;m Jerry, a web developer committed to helping small
                 businesses succeed through custom, modern websites and
                 applications. Whether you need a simple site to establish your
-                online presence or something more advanceded, I&apos;m here to
+                online presence or something more advanced, I&apos;m here to
                 bring your ideas to life.
               </p>
             </div>

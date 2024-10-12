@@ -31,7 +31,7 @@ export default async function WebApplicationsPage() {
                 things back on track, I’ve got you covered!
               </p>
               <p className="prose prose-invert mt-4 text-xl md:text-2xl">
-                Custom Software Development: I’ll build software tailored
+                With custom software development, I’ll build software tailored
                 exactly to your business needs from the ground up.
               </p>
             </div>
