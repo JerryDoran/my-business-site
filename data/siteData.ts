@@ -38,8 +38,36 @@ import education from "@/assets/support/education.svg";
 import coding from "@/assets/support/coding-1.svg";
 import chart from "@/assets/support/chart-2-1.svg";
 import advanced from "@/assets/support/advanced-1.svg";
+import customrug from "@/assets/customrugs.png";
+import stumps from "@/assets/stumps.png";
 
 export const projects = [
+  {
+    slug: "custom-rug",
+    img: customrug,
+    category: "small-business",
+    title: "Custom Rug Life",
+    description:
+      "Handcrafted custom rugs designed to match your style and space, with unique patterns and premium materials for every home.",
+    summary:
+      "Custom Rug Life offers high-quality, custom-made rugs at affordable prices. Their designs are tailored to suit individual preferences, enhancing any space with unique, personalized pieces.",
+
+    demoLink: "https://customruglife.vercel.app/",
+    isFeatured: false,
+  },
+  {
+    slug: "tommy-stumps",
+    img: stumps,
+    category: "small-business",
+    title: "Tommy Stump Grinder LLC",
+    description:
+      "Efficient tree stump removal and property cleanup services, ensuring safe, clean, and professional results.",
+    summary:
+      "Tommy Stumps, LLC is a locally owned business offering professional tree services, specializing in stump removal, property cleanup, and dirt restoration. They provide competitive pricing and personalized service, including free estimates and on-site project bidding to ensure property protection during their work.",
+
+    demoLink: "https://tommystumps.vercel.app/",
+    isFeatured: false,
+  },
   {
     slug: "thanos-music",
     img: thanos,

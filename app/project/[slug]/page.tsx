@@ -37,6 +37,8 @@ export default async function Page({ params }: { params: Params }) {
                 <Link
                   href={project.demoLink}
                   className="w-fit rounded-xl border border-violet-200/40 bg-violet-100/20 px-3 py-2 text-sm font-semibold tracking-wider text-violet-100 outline-none ring-violet-300 transition-colors hover:border-violet-200/40 hover:bg-violet-500/10 hover:text-violet-400 focus:ring-2 max-sm:text-center lg:flex"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View Demo
                 </Link>
