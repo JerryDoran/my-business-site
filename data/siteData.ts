@@ -97,7 +97,7 @@ export const projects = [
     slug: "entertainment-hub",
     img: entertainment,
     category: "business",
-    title: "Entertainment Hub",
+    title: "Video Hub",
     description:
       "Explore and browse your favorite movies and television shows in all in one place.",
     summary:
