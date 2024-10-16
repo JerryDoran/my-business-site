@@ -46,7 +46,7 @@ export const projects = [
     slug: "custom-rug",
     img: customrug,
     category: "small-business",
-    title: "Custom Rug Life",
+    title: "Custom Rug",
     description:
       "Handcrafted custom rugs designed to match your style and space, with unique patterns and premium materials for every home.",
     summary:
@@ -59,7 +59,7 @@ export const projects = [
     slug: "tommy-stumps",
     img: stumps,
     category: "small-business",
-    title: "Tommy Stump Grinder LLC",
+    title: "Tommy Stump",
     description:
       "Efficient tree stump removal and property cleanup services, ensuring safe, clean, and professional results.",
     summary:
@@ -85,7 +85,7 @@ export const projects = [
     slug: "metaverse",
     img: metaverse,
     category: "design",
-    title: "Explore the Metaverse",
+    title: "Metaverse",
     description:
       "Enjoy the virtual world of the metaverse through the use of state of the art VR devices.",
     summary:
@@ -109,7 +109,7 @@ export const projects = [
     slug: "next-properties",
     img: realty,
     category: "business",
-    title: "Next Gen Realty",
+    title: "Next Realty",
     description:
       "Explore and browse your favorite properties and locations in all in one place.",
     summary:
@@ -133,7 +133,7 @@ export const projects = [
     slug: "fit-club",
     img: fitclub,
     category: "business",
-    title: "Fit Club Gym",
+    title: "Fit Club",
     description:
       "Feel your best and perform at the level you want in our all inclusive fit club.",
     summary:
@@ -145,7 +145,7 @@ export const projects = [
     slug: "rosa-restaurant",
     img: rosa,
     category: "business",
-    title: "The Rosa Restaurant",
+    title: "The Rosa",
     description:
       "Enjoy fun times and delicious authentic food in a wonderful family environment.",
     summary:
@@ -157,7 +157,7 @@ export const projects = [
     slug: "next-gen-banking",
     img: hoobank,
     category: "design",
-    title: "Next Gen Banking",
+    title: "Next Bank",
     description:
       "Next generation banking is here in this easy to use new banking site of the future.",
     summary:

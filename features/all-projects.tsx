@@ -13,28 +13,26 @@ export default function AllProjects() {
       </div>
       <div className="mt-4 max-w-xl sm:align-baseline md:text-xl" id="projects">
         <p className="prose prose-invert text-center text-xl md:text-2xl">
-          My goal is to be the one-stop shop solution for all my clients
-          whenever they need anything done to their websites.
+          My goal is to be the one-stop shop solution for all my clients.
         </p>
       </div>
       <div className="relative mt-10 grid grid-cols-2 gap-4 lg:grid-cols-3">
-        <div className="absolute inset-0 -z-10 bg-blue-500/10 blur-2xl filter" />
+        <div className="absolute inset-0 -z-10 bg-blue-500/15 blur-2xl filter" />
         {projects.map(
           (project) =>
             project && (
               <div
                 key={project.slug}
-                className="glass-container inset-0 overflow-hidden rounded-lg p-2 opacity-85 transition-opacity duration-300 hover:cursor-pointer hover:opacity-100"
+                className="glass-container group inset-0 overflow-hidden rounded-lg p-2 opacity-100 transition duration-300 hover:cursor-pointer hover:opacity-85"
               >
-                <h3 className="mb-2 sm:text-xl">{project.title}</h3>
-                <Link
-                  href={`/project/${project.slug}`}
-                  className="after:absolute after:inset-0 hover:underline"
-                >
+                <h3 className="mb-2 text-sm sm:text-xl">{project.title}</h3>
+                <Link href={`/project/${project.slug}`}>
                   <Image
                     src={project.img}
                     alt="project image"
-                    className="duration-[700ms] max-h-[200px] rounded-lg object-cover transition group-hover:scale-105"
+                    width={300}
+                    height={200}
+                    className="h-[100px] rounded-lg object-cover transition duration-300 group-hover:scale-105 sm:h-[200px]"
                   />
                 </Link>
               </div>

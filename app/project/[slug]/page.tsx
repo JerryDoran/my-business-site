@@ -1,14 +1,17 @@
+"use client";
+
 import Bounded from "@/components/bounded";
 import StarGrid from "@/components/star-grid";
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/siteData";
+import { useRouter } from "next/navigation";
 
 type Params = { slug: string };
 
-export default async function Page({ params }: { params: Params }) {
+export default function Page({ params }: { params: Params }) {
   const [project] = projects.filter((project) => project.slug === params.slug);
-  console.log(project);
+  const router = useRouter();
 
   return (
     <Bounded as="article" className="p-6">
@@ -42,12 +45,12 @@ export default async function Page({ params }: { params: Params }) {
                 >
                   View Demo
                 </Link>
-                <Link
-                  href="/#projects"
+                <button
+                  onClick={() => router.back()}
                   className="w-fit px-2 py-2 text-sm transition hover:text-violet-400 hover:underline max-sm:text-center"
                 >
-                  Back to projects
-                </Link>
+                  Back
+                </button>
               </div>
             </div>
           </div>
