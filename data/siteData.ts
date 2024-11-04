@@ -370,17 +370,17 @@ export const testimonials = [
       "The website is amazing and I'm especially impressed with how great it looks on my phone! The image gallery page is perfect and exactly the way I envisioned. Thank you so much for all you've done - I couldn't be happier with the result!",
   },
   {
-    name: "John Doe",
-    company: "Microsoft",
+    name: "James Hillard",
+    company: "Handyman Services LLC",
     testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+      "I couldn’t be happier with the website! The layout is clean, professional, and really captures what my business is all about. Not only does it look nice, but it also makes it easy for clients to find the information they need. Thanks for creating a website that I’m truly proud to share with my clients.",
   },
-  {
-    name: "Tony Stark",
-    company: "Stark Industries",
-    testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
-  },
+  // {
+  //   name: "Tony Stark",
+  //   company: "Stark Industries",
+  //   testimonial:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
+  // },
 ];
 
 export const customWebsites = [
