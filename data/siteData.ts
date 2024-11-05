@@ -40,8 +40,22 @@ import chart from "@/assets/support/chart-2-1.svg";
 import advanced from "@/assets/support/advanced-1.svg";
 import customrug from "@/assets/customrugs.png";
 import stumps from "@/assets/stumps.png";
+import handymanServices from "@/assets/handyman.png";
 
 export const projects = [
+  {
+    slug: "handyman-services",
+    img: handymanServices,
+    category: "small-business",
+    title: "Handyman Services LLC",
+    description:
+      "Trusted since 2005 and serving northeast Ohio for all your home improvement needs. Fully insured and bonded, specialiinge in roofing, siding, drywall, painting, kitchen and bathroom remodels, electrical, plumbing, and more.",
+    summary:
+      "Handyman Services LLC offers high-quality, flexibility and trusted services. Specializing in roofing, siding, drywall, painting, kitchen and bathroom remodels, electrical, plumbing, and more.",
+
+    demoLink: "https://handymanservicesllc.vercel.app/",
+    isFeatured: true,
+  },
   {
     slug: "custom-rug",
     img: customrug,
