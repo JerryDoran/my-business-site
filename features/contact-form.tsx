@@ -1,4 +1,5 @@
-import Bounded from "@/components/bounded";
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -7,6 +8,10 @@ import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import logo from "@/assets/icon.png";
 import { cn } from "@/lib/utils";
+import { sendEmailAction } from "@/actions/send-email";
+import { useRef, useState } from "react";
+import { StringMap } from "@/types/contact";
+import toast from "react-hot-toast";
 
 export default function ContactForm({
   title,
@@ -15,6 +20,21 @@ export default function ContactForm({
   title: string;
   className?: string;
 }) {
+  const [errors, setErrors] = useState<StringMap>({});
+  const formRef = useRef<HTMLFormElement>(null);
+
+  async function handleFormSubmit(formData: FormData) {
+    const { errors, successMessage } = await sendEmailAction(formData);
+
+    if (successMessage) {
+      // setErrors({});
+      toast.success(successMessage);
+      formRef.current?.reset();
+    }
+    setErrors(errors || {});
+
+    console.log(errors, successMessage);
+  }
   return (
     <div className={cn("mt-10 w-full", className)}>
       <h1 className="mb-8 text-balance text-4xl font-semibold sm:text-7xl">
@@ -23,9 +43,9 @@ export default function ContactForm({
       <Card className="glass-container w-full border-none bg-gradient-to-br from-gray-800 to-gray-950 p-4 text-white">
         <CardContent className="mt-5">
           <form
-            action="https://getform.io/f/alljdzga"
+            action={handleFormSubmit}
             className="mt-5 flex flex-col gap-y-4"
-            method="POST"
+            ref={formRef}
           >
             <div className="mb-6 flex flex-col items-center gap-4 md:flex-row">
               <Image src={logo} alt="logo" width={40} height={40} />
@@ -38,18 +58,33 @@ export default function ContactForm({
               <div className="grid flex-1 space-y-2">
                 <Label>Name</Label>
                 <Input
+                  type="text"
                   className="h-12 text-base"
                   name="name"
+                  id="name"
                   placeholder="Enter your name"
+                  required
                 />
+                <div className="min-h-8">
+                  {errors?.name && (
+                    <p className="text-sm text-red-500">{errors.name}</p>
+                  )}
+                </div>
               </div>
               <div className="grid flex-1 space-y-2">
                 <Label>Email</Label>
                 <Input
                   className="h-12 text-base"
                   name="email"
+                  id="email"
                   placeholder="Enter your email"
+                  required
                 />
+                <div className="min-h-8">
+                  {errors?.email && (
+                    <p className="text-sm text-red-500">{errors.email}</p>
+                  )}
+                </div>
               </div>
               <div className="grid flex-1 space-y-2">
                 <Label>Phone</Label>
@@ -58,6 +93,11 @@ export default function ContactForm({
                   name="phone"
                   placeholder="Enter your phone (optional)"
                 />
+                <div className="min-h-8">
+                  {errors?.phone && (
+                    <p className="text-sm text-red-500">{errors.phone}</p>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -67,7 +107,13 @@ export default function ContactForm({
                 className="h-32 text-base"
                 placeholder="Please share some details about your needs..."
                 name="message"
+                required
               />
+              <div className="min-h-8">
+                {errors?.message && (
+                  <p className="text-sm text-red-500">{errors.message}</p>
+                )}
+              </div>
             </div>
             <Button className="text-xl uppercase" type="submit">
               Get your website
