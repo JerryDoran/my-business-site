@@ -19,7 +19,7 @@ export default async function CustomWebsitesPage() {
       <div className="relative mt-8">
         <StarGrid />
         <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-6">
-          <div className="flex flex-1 flex-col gap-y-2 max-lg:items-center max-lg:text-center">
+          <div className="flex flex-1 flex-col gap-y-2">
             <h1 className="text-balance text-4xl font-semibold sm:text-6xl">
               <span className="heading-gradient">Design</span> Your Digital
               Brand
@@ -44,7 +44,7 @@ export default async function CustomWebsitesPage() {
               alt="custom-website"
               height={300}
               width={650}
-              className="h-auto w-auto rounded-lg"
+              className="h-auto rounded-lg max-lg:w-[1000px]"
               priority
             />
           </div>

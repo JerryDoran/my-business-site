@@ -3,7 +3,7 @@ import { supportAreas, supportServices } from "@/data/siteData";
 import Bounded from "@/components/bounded";
 import StarGrid from "@/components/star-grid";
 import Image from "next/image";
-import techSupport from "@/assets/support/tech-support.jpg";
+import techSupport from "@/assets/support/support-tech.jpg";
 import CTA from "@/components/cta";
 import { Lato } from "next/font/google";
 import ContactForm from "@/features/contact-form";
@@ -19,9 +19,9 @@ export default async function SupportPage() {
       <div className="relative mt-8">
         <StarGrid />
         <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-6">
-          <div className="flex flex-1 flex-col gap-y-2 max-lg:items-center max-lg:text-center">
+          <div className="flex flex-1 flex-col gap-y-2">
             <h1 className="text-balance text-4xl font-semibold sm:text-6xl">
-              <span className="heading-gradient">Support</span> and maintence
+              <span className="heading-gradient">Support</span> and maintenance
               for continued success
             </h1>
 
@@ -40,7 +40,7 @@ export default async function SupportPage() {
               alt="custom-website"
               height={300}
               width={650}
-              className="rounded-lg"
+              className="rounded-lg max-lg:w-[1000px]"
             />
           </div>
         </div>

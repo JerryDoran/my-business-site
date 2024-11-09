@@ -10,7 +10,7 @@ export default async function ContactPage() {
       <div className="relative mt-8">
         <StarGrid />
         <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-8">
-          <div className="flex flex-1 flex-col gap-y-2 max-lg:items-center max-lg:text-center">
+          <div className="flex flex-1 flex-col gap-y-2">
             <h1 className="text-balance text-4xl font-semibold sm:text-6xl">
               Let&apos;s <span className="heading-gradient">Build</span>{" "}
               Something Great Together
@@ -26,14 +26,14 @@ export default async function ContactPage() {
             </div>
             {/* <CTA className="ml-0 mt-8 flex py-3 md:text-lg" /> */}
           </div>
-          <div className="hero-image glass-container flex-1">
+          <div className="glass-container flex-1">
             <div className="hero-glow absolute inset-0 -z-10 bg-blue-500/10 blur-2xl filter" />
             <Image
               src={build}
               alt="custom-website"
               height={300}
               width={650}
-              className="rounded-lg"
+              className="w-full rounded-lg max-lg:w-[1000px]"
             />
           </div>
         </div>
