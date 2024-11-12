@@ -86,7 +86,7 @@ export default function ContactForm({
                   )}
                 </div>
               </div>
-              <div className="grid flex-1 space-y-2">
+              {/* <div className="grid flex-1 space-y-2">
                 <Label>Phone</Label>
                 <Input
                   className="h-12 text-base"
@@ -98,7 +98,7 @@ export default function ContactForm({
                     <p className="text-sm text-red-500">{errors.phone}</p>
                   )}
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="grid space-y-2">
