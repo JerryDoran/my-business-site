@@ -15,7 +15,6 @@ export async function sendEmailAction(
   const unvalidatedContactInfo = {
     name: formData.get("name") as string,
     email: formData.get("email") as string,
-    phone: formData.get("phone") as string,
     message: formData.get("message") as string,
   };
 
