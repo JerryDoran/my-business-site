@@ -7,50 +7,70 @@ import custom from "@/assets/custom.jpg";
 import CTA from "@/components/cta";
 import { Lato } from "next/font/google";
 import ContactForm from "@/features/contact-form";
+import { Metadata } from "next";
 
 const lato = Lato({
   subsets: ["latin"],
   weight: ["400", "700"], // Add the weights you need
 });
 
+export const metadata: Metadata = {
+  title: "Custom Websites | Design Your Digital Brand | TheWebArchitech",
+  description:
+    "Craft your unique online presence with TheWebArchitech. We create custom websites and optimize leading CMS platforms to bring your vision to life, ensuring complete control over design, user experience, and functionality.",
+  keywords: [
+    "custom websites",
+    "web design",
+    "digital brand",
+    "CMS optimization",
+    "user experience",
+    "TheWebArchitech",
+  ],
+};
+
 export default async function CustomWebsitesPage() {
   return (
     <Bounded className="p-6 px-10">
       <div className="relative mt-8">
         <StarGrid />
-        <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-6">
-          <div className="flex flex-1 flex-col gap-y-2">
-            <h1 className="text-balance text-4xl font-semibold sm:text-6xl">
-              <span className="heading-gradient">Design</span> Your Digital
-              Brand
-            </h1>
+        <section aria-labelledby="hero-heading">
+          <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-6">
+            <div className="flex flex-1 flex-col gap-y-2">
+              <h1 className="text-balance text-4xl font-semibold sm:text-6xl">
+                <span className="heading-gradient">Design</span> Your Digital
+                Brand
+              </h1>
 
-            <div className="w-[90%] text-slate-300">
-              <p className="prose prose-invert mt-4 text-xl md:text-2xl">
-                I craft custom websites and optimize leading CMS platforms to
-                bring your vision to life.
-              </p>
-              <p className="prose prose-invert mt-4 text-xl md:text-2xl">
-                Take complete control over your site&apos;s design, user
-                experience, and functionality.
-              </p>
+              <div className="w-[90%] text-slate-300">
+                <p className="prose prose-invert mt-4 text-xl md:text-2xl">
+                  I craft custom websites and optimize leading CMS platforms to
+                  bring your vision to life.
+                </p>
+                <p className="prose prose-invert mt-4 text-xl md:text-2xl">
+                  Take complete control over your site&apos;s design, user
+                  experience, and functionality.
+                </p>
+              </div>
+              <CTA className="ml-0 mt-8 flex py-3 md:text-lg" />
             </div>
-            <CTA className="ml-0 mt-8 flex py-3 md:text-lg" />
+            <div className="hero-image glass-container flex-1">
+              <div className="hero-glow absolute inset-0 -z-10 bg-blue-500/10 blur-2xl filter" />
+              <Image
+                src={custom}
+                alt="custom-website"
+                height={300}
+                width={650}
+                className="h-auto rounded-lg max-lg:w-[1000px]"
+                priority
+              />
+            </div>
           </div>
-          <div className="hero-image glass-container flex-1">
-            <div className="hero-glow absolute inset-0 -z-10 bg-blue-500/10 blur-2xl filter" />
-            <Image
-              src={custom}
-              alt="custom-website"
-              height={300}
-              width={650}
-              className="h-auto rounded-lg max-lg:w-[1000px]"
-              priority
-            />
-          </div>
-        </div>
+        </section>
       </div>
-      <div className="mx-auto mt-20 flex w-full flex-col items-center gap-y-4 lg:mt-40">
+      <section
+        aria-labelledby="tailored-websites-heading"
+        className="mx-auto mt-20 flex w-full flex-col items-center gap-y-4 lg:mt-40"
+      >
         <div
           className={`${lato.className} flex items-center gap-x-2 text-sm uppercase tracking-wider`}
         >
@@ -84,8 +104,11 @@ export default async function CustomWebsitesPage() {
             </div>
           ))}
         </div>
-      </div>
-      <div className="mx-auto mt-20 flex w-full flex-col items-center gap-y-4 lg:mt-28">
+      </section>
+      <section
+        aria-labelledby="core-services-heading"
+        className="mx-auto mt-20 flex w-full flex-col items-center gap-y-4 lg:mt-28"
+      >
         <div
           className={`${lato.className} flex items-center gap-x-2 text-sm uppercase tracking-wider`}
         >
@@ -120,10 +143,48 @@ export default async function CustomWebsitesPage() {
             </div>
           ))}
         </div>
-      </div>
-      <div className="mx-auto mt-10 w-full">
+      </section>
+      <section
+        aria-labelledby="contact-form-heading"
+        className="mx-auto mt-10 w-full"
+      >
         <ContactForm title="Ready to get the website your business deserves?" />
-      </div>
+      </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Custom Websites | Design Your Digital Brand | The Web Architech",
+            description:
+              "Craft your unique online presence with The Web Architech. I create custom websites and optimize leading CMS platforms to bring your vision to life, ensuring complete control over design, user experience, and functionality.",
+            url: "https://www.thewebarchitech.com/custom-websites",
+            mainEntity: {
+              "@type": "Service",
+              name: "Custom Website Design",
+              provider: {
+                "@type": "Organization",
+                name: "The Web Architech",
+                url: "https://www.thewebarchitech.com",
+              },
+              serviceType: "Web Design and Development",
+              areaServed: {
+                "@type": "Country",
+                name: "United States",
+              },
+              description:
+                "Custom website design and development services tailored for businesses of all sizes. We create unique, engaging, and functional websites that drive user engagement and conversions.",
+              offers: {
+                "@type": "Offer",
+                availability: "https://schema.org/InStock",
+                price: "1000.00",
+                priceCurrency: "USD",
+              },
+            },
+          }),
+        }}
+      />
     </Bounded>
   );
 }
