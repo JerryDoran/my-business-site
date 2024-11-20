@@ -6,28 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/siteData";
 import { useRouter } from "next/navigation";
-import { Metadata } from "next";
 
 type Params = { slug: string };
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Params;
-}): Promise<Metadata> {
-  const [project] = projects.filter((project) => project.slug === params.slug);
-  return {
-    title: `${project.title} | Project by TheWebArchitech`,
-    description: project.description,
-    openGraph: {
-      title: `${project.title} | Project by TheWebArchitech`,
-      description: project.description,
-      images: [
-        { url: project.img.src, width: 1200, height: 630, alt: project.title },
-      ],
-    },
-  };
-}
 
 export default function Page({ params }: { params: Params }) {
   const [project] = projects.filter((project) => project.slug === params.slug);
