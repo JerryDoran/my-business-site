@@ -4,7 +4,7 @@ import ContactForm from "@/features/contact-form";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Jerry | Professional Web Developer | The Web Architech",
+  title: "About Jerry | Professional Web Developer | TheWebArchitech",
   description:
     "Meet Jerry, a specialized web developer creating user-friendly, affordable websites for small to medium-sized businesses. Learn about my approach to effective web design and development.",
   keywords: [

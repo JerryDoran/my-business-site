@@ -40,11 +40,11 @@ export default function ContactForm({
       <h1 className="mb-8 text-balance text-4xl font-semibold sm:text-7xl">
         <span className="heading-gradient">Contact</span> me
       </h1>
-      <Card className="glass-container w-full border-none bg-gradient-to-br from-gray-800 to-gray-950 p-4 text-white">
-        <CardContent className="mt-5">
+      <Card className="glass-container w-full border-none bg-gradient-to-br from-gray-800 to-gray-950 px-0 py-4 text-white">
+        <CardContent className="mt-5 px-3">
           <form
             action={handleFormSubmit}
-            className="mt-5 flex flex-col gap-y-4"
+            className="mt-5 flex flex-col gap-y-2"
             ref={formRef}
           >
             <div className="mb-6 flex flex-col items-center gap-4 md:flex-row">
@@ -54,7 +54,7 @@ export default function ContactForm({
               </h2>
             </div>
 
-            <div className="flex flex-col justify-between gap-4 md:flex-row">
+            <div className="gap flex flex-col md:flex-row md:gap-4">
               <div className="grid flex-1 space-y-2">
                 <Label>Name</Label>
                 <Input

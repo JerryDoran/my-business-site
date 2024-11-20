@@ -8,7 +8,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact TheWebArchitech | Let's Build Your Dream Website",
   description:
-    "Ready to elevate your business with a new website? Contact TheWebArchitech today and let's start creating something amazing for your online presence.",
+    "Ready to elevate your business with a new website? Contact The Web Architech today and let's start creating something amazing for your online presence.",
   keywords: [
     "contact",
     "web development",
@@ -66,7 +66,7 @@ export default async function ContactPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            name: "Contact The Web Architech",
+            name: "Contact TheWebArchitech",
             description:
               "Contact page for The Web Architech, offering custom web development services for businesses.",
             url: "https://www.thewebarchitech.com/contact",

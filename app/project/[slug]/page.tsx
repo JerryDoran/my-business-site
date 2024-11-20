@@ -6,8 +6,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { projects } from "@/data/siteData";
 import { useRouter } from "next/navigation";
+import { Metadata } from "next";
 
 type Params = { slug: string };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const [project] = projects.filter((project) => project.slug === params.slug);
+  return {
+    title: `${project.title} | Project by TheWebArchitech`,
+    description: project.description,
+    openGraph: {
+      title: `${project.title} | Project by TheWebArchitech`,
+      description: project.description,
+      images: [
+        { url: project.img.src, width: 1200, height: 630, alt: project.title },
+      ],
+    },
+  };
+}
 
 export default function Page({ params }: { params: Params }) {
   const [project] = projects.filter((project) => project.slug === params.slug);
@@ -56,6 +76,30 @@ export default function Page({ params }: { params: Params }) {
           </div>
         </div>
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: `${project.title} | Project by TheWebArchitech`,
+            description: project.description,
+            url: `https://www.thewebarchitech.com/projects/${project.slug}`,
+            image: project.img,
+            mainEntity: {
+              "@type": "CreativeWork",
+              name: project.title,
+              description: project.description,
+              image: project.img,
+              url: project.demoLink,
+              creator: {
+                "@type": "Organization",
+                name: "The Web Architech",
+              },
+            },
+          }),
+        }}
+      />
     </Bounded>
   );
 }

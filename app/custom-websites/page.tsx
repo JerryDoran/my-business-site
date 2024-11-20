@@ -156,7 +156,7 @@ export default async function CustomWebsitesPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Custom Websites | Design Your Digital Brand | The Web Architech",
+            name: "Custom Websites | Design Your Digital Brand | TheWebArchitech",
             description:
               "Craft your unique online presence with The Web Architech. I create custom websites and optimize leading CMS platforms to bring your vision to life, ensuring complete control over design, user experience, and functionality.",
             url: "https://www.thewebarchitech.com/custom-websites",
@@ -165,7 +165,7 @@ export default async function CustomWebsitesPage() {
               name: "Custom Website Design",
               provider: {
                 "@type": "Organization",
-                name: "The Web Architech",
+                name: "TheWebArchitech",
                 url: "https://www.thewebarchitech.com",
               },
               serviceType: "Web Design and Development",

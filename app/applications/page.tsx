@@ -15,7 +15,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "Custom Web Applications | The Web Architech",
+  title: "Custom Web Applications | TheWebArchitech",
   description:
     "Tailored web application development services for your business needs. From concept to deployment, we create flexible, future-proof systems to help your business grow.",
   keywords: [
@@ -155,7 +155,7 @@ export default async function WebApplicationsPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Custom Web Applications | The Web Architech",
+            name: "Custom Web Applications | TheWebArchitech",
             description:
               "Tailored web application development services for your business needs. From concept to deployment, we create flexible, future-proof systems to help your business grow.",
             url: "https://www.thewebarchitech.com/web-applications",
@@ -164,7 +164,7 @@ export default async function WebApplicationsPage() {
               name: "Custom Web Application Development",
               provider: {
                 "@type": "Organization",
-                name: "The Web Architech",
+                name: "TheWebArchitech",
                 url: "https://www.thewebarchitech.com",
               },
               serviceType: "Web Development",

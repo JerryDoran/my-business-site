@@ -1,124 +1,126 @@
-import { supportAreas, supportServices } from "@/data/siteData";
-
+import { Metadata } from "next";
 import Bounded from "@/components/bounded";
 import StarGrid from "@/components/star-grid";
 import Image from "next/image";
-import techSupport from "@/assets/support/support-tech.jpg";
-import CTA from "@/components/cta";
-import { Lato } from "next/font/google";
+import projects from "@/assets/projects.jpg";
 import ContactForm from "@/features/contact-form";
+import AllProjects from "@/features/all-projects";
 
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Add the weights you need
-});
+export const metadata: Metadata = {
+  title: "Projects | Helping Small Businesses Shine Online | TheWebArchitech",
+  description:
+    "Explore our portfolio of custom websites and web applications designed to help small businesses succeed online. From simple sites to advanced solutions, we bring your ideas to life.",
+  keywords: [
+    "web development projects",
+    "small business websites",
+    "custom web applications",
+    "TheWebArchitech portfolio",
+  ],
+};
 
-export default async function SupportPage() {
+export default async function ProjectsPage() {
   return (
     <Bounded className="p-6 px-10">
       <div className="relative mt-8">
         <StarGrid />
-        <div className="flex flex-col items-center gap-16 lg:flex-row lg:gap-6">
-          <div className="flex flex-1 flex-col gap-y-2">
-            <h1 className="text-balance text-4xl font-semibold sm:text-6xl">
-              <span className="heading-gradient">Support</span> and maintenance
-              for continued success
-            </h1>
+        <section aria-labelledby="hero-heading">
+          <div className="flex flex-col items-center gap-12 lg:flex-row lg:gap-2">
+            <div className="flex flex-1 flex-col gap-y-2 max-lg:items-center">
+              <h1
+                id="hero-heading"
+                className="text-balance text-4xl font-semibold sm:text-6xl"
+              >
+                Helping Small Businesses{" "}
+                <span className="heading-gradient">Shine</span> Online
+              </h1>
 
-            <div className="w-[90%] text-slate-300">
-              <p className="prose prose-invert mt-4 text-xl md:text-2xl">
-                I will help support your ongoing business needs and can provide
-                new features to ensure your website continues performing.
-              </p>
+              <div className="text-slate-300">
+                <p className="prose prose-invert mt-4 w-[90%] text-xl md:text-2xl">
+                  Hi, I&apos;m Jerry, a web developer committed to helping small
+                  businesses succeed through custom, modern websites and
+                  applications. Whether you need a simple site to establish your
+                  online presence or something more advanced, I&apos;m here to
+                  bring your ideas to life.
+                </p>
+              </div>
             </div>
-            <CTA className="ml-0 mt-8 flex py-3 md:text-lg" />
-          </div>
-          <div className="hero-image glass-container flex-1">
-            <div className="hero-glow absolute inset-0 -z-10 bg-blue-500/10 blur-2xl filter" />
-            <Image
-              src={techSupport}
-              alt="custom-website"
-              height={300}
-              width={650}
-              className="rounded-lg max-lg:w-[1000px]"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="mx-auto mt-20 flex w-full flex-col items-center gap-y-4 lg:mt-40">
-        <div
-          className={`${lato.className} flex items-center gap-x-2 text-sm uppercase tracking-wider`}
-        >
-          <hr className="w-4" /> Reliable Support Anytime <hr className="w-4" />
-        </div>
-        <h2 className="font text-center text-4xl font-semibold">
-          Ensure your software runs the way you do
-        </h2>
-        <p className="prose prose-invert mt-2 w-3/4 text-center text-lg md:text-xl">
-          Add new features and expand support for your software! I can team up
-          with you or handle everything myself to keep things running smoothly
-          and up-to-date.
-        </p>
-        <div className="mt-12 grid grid-cols-1 items-stretch gap-16 transition-all md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {supportAreas.map((item) => (
-            <div
-              className="mx-auto flex w-[300px] flex-col items-center gap-y-4 py-6 transition hover:scale-105 max-md:w-full"
-              key={item.title}
-            >
-              <Image
-                src={item.image}
-                alt="custom website service"
-                className="w-1/2"
+            <div className="hero-image glass-container flex-1">
+              <div
+                className="hero-glow absolute inset-0 -z-10 bg-blue-500/10 blur-2xl filter"
+                aria-hidden="true"
               />
-              <h2 className="text-center text-2xl font-semibold">
-                {item.title}
-              </h2>
-              <p className="prose prose-invert text-center text-lg text-gray-400">
-                {item.content}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="mx-auto mt-20 flex w-full flex-col items-center gap-y-4 lg:mt-28">
-        <div
-          className={`${lato.className} flex items-center gap-x-2 text-sm uppercase tracking-wider`}
-        >
-          <hr className="w-4" /> Update your website <hr className="w-4" />
-        </div>
-        <h2 className="font text-center text-4xl font-semibold">
-          Keep your website fit
-        </h2>
-        <p className="prose prose-invert mt-2 w-3/4 text-center text-lg md:text-xl">
-          Get in touch with me letting me know what kind of changes you’d like
-          to make to your website, and I can provide you an hourly quote of how
-          long it would take to do.
-        </p>
-        <div className="mt-12 grid grid-cols-1 gap-10 transition-all md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {supportServices.map((item) => (
-            <div
-              className="glass-container relative row-span-4 grid grid-rows-subgrid items-center gap-4 rounded-lg bg-gradient-to-br from-gray-800 to-gray-950 p-4 transition hover:scale-105"
-              key={item.title}
-            >
-              <div className="absolute inset-0 -z-10 bg-blue-500/10 blur-2xl filter" />
-              <h2 className="text-center text-2xl font-semibold">
-                {item.title}
-              </h2>
               <Image
-                src={item.image}
-                alt="custom website service"
-                className="m-auto w-12"
+                src={projects}
+                alt="Showcase of custom websites for small businesses"
+                height={300}
+                width={650}
+                className="rounded-lg"
+                priority
               />
-              <p className="prose prose-invert text-center text-lg text-gray-400">
-                {item.content}
-              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
       </div>
-      <div className="mx-auto mt-10 w-full">
-        <ContactForm title="Let’s Update your Website" />
-      </div>
+      <section aria-labelledby="projects-heading" className="mt-40 max-lg:mt-0">
+        <h2 id="projects-heading" className="sr-only">
+          Our Projects
+        </h2>
+        <AllProjects />
+      </section>
+
+      <section
+        aria-labelledby="contact-form-heading"
+        className="mx-auto mt-10 w-full"
+      >
+        <h2 id="contact-form-heading" className="sr-only">
+          Contact Us
+        </h2>
+        <ContactForm title="Ready to get the website your business deserves?" />
+      </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "Projects | Helping Small Businesses Shine Online | TheWebArchitech",
+            description:
+              "Explore our portfolio of custom websites and web applications designed to help small businesses succeed online. From simple sites to advanced solutions, we bring your ideas to life.",
+            url: "https://www.thewebarchitech.com/projects",
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Custom Websites",
+                  description:
+                    "Tailored websites designed to showcase small businesses online",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Web Applications",
+                  description:
+                    "Advanced web solutions to streamline business operations",
+                },
+              ],
+            },
+            offers: {
+              "@type": "Offer",
+              description:
+                "Custom web development services for small businesses",
+              url: "https://www.thewebarchitech.com/contact",
+            },
+            provider: {
+              "@type": "Organization",
+              name: "TheWebArchitech",
+              url: "https://www.thewebarchitech.com",
+            },
+          }),
+        }}
+      />
     </Bounded>
   );
 }
