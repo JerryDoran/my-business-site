@@ -41,8 +41,22 @@ import advanced from "@/assets/support/advanced-1.svg";
 import customrug from "@/assets/customrugs.png";
 import stumps from "@/assets/stumps.png";
 import handymanServices from "@/assets/handyman.png";
+import proBest from "@/assets/pro-best-carpentry.png";
 
 export const projects = [
+  {
+    slug: "pro-best-carpentry",
+    img: proBest,
+    category: "small-business",
+    title: "Pro Best Carpentry",
+    description:
+      "Expert craftsmanship for all your residential and commercial needs. From residential renovations to commercial builds.",
+    summary:
+      "Offering a wide range of services from custom woodwork, kitchens, and bathrooms, to more involved home renovations. We have been helping homeowners transform their houses into their perfect living space.",
+
+    demoLink: "https://probestcarpentry.vercel.app/",
+    isFeatured: true,
+  },
   {
     slug: "handyman-services",
     img: handymanServices,
@@ -389,12 +403,12 @@ export const testimonials = [
     testimonial:
       "I couldn’t be happier with the website! The layout is clean, professional, and really captures what my business is all about. Not only does it look nice, but it also makes it easy for clients to find the information they need. Thanks for creating a website that I’m truly proud to share with my clients.",
   },
-  // {
-  //   name: "Tony Stark",
-  //   company: "Stark Industries",
-  //   testimonial:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a velit fermentum, ultrices ligula sed, tincidunt est. Nullam vulputate sollicitudin nulla non pulvinar. In eget imperdiet magna.",
-  // },
+  {
+    name: "Tom Probst",
+    company: "Pro Best Carpentry",
+    testimonial:
+      "I am very happy with the website Jerry built for me! It looks amazing, and I’ve already received so many compliments from friends and family who’ve seen it. The site is not only visually impressive but also well-written and professional. Overall, I think it looks awesome! Thank you, Jerry, for making the process so smooth and delivering such a fantastic site!",
+  },
 ];
 
 export const customWebsites = [
