@@ -306,7 +306,7 @@ export const clientNeeds = [
   {
     title: "One-stop-shop support",
     content:
-      "It won't be just a website, I will be one email or call away for any website support you need.  I often help out free of charge it it's a minor issue or quick change.",
+      "It won't be just a website, I will be one email or call away for any website support you need.  I often help out free of charge if it's a minor issue or quick change.",
     image: support,
     wide: false,
   },
@@ -366,24 +366,18 @@ export const faqs = [
   },
   {
     id: 6,
-    question: "How long does it take to build a website?",
-    answer:
-      "The timeline depends on the size and complexity of your site. A simple website might take a few weeks, while a more complex project could take a couple of months. I’ll give you a clear timeline once we discuss your needs.",
-  },
-  {
-    id: 7,
     question: "What happens if my website needs fixed after it’s live?",
     answer:
       "I offer ongoing support and maintenance packages to keep your website running smoothly. If anything goes wrong, I’m just an email or a phone call away to help you out.",
   },
   {
-    id: 8,
+    id: 7,
     question: "Can you redesign my existing website?",
     answer:
       "Of course! Whether you need a complete overhaul or just a few tweaks to modernize your site, I can help refresh your online presence and make it work better for your business.",
   },
   {
-    id: 9,
+    id: 8,
     question: "Whats the website building process?",
     answer:
       "We meet via a video call, or a phone call to discuss your website and what you’re looking for. I build out the website with your content based on your requirements. I send you a private link to your new website built out, and you can then send any revisions or changes you want me to make. There are usually 2 sets of revisions. Once perfected, I launch the website!",

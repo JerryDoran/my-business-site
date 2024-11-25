@@ -115,7 +115,8 @@ export default function ContactForm({
                 )}
               </div>
             </div>
-            <Button className="text-xl uppercase" type="submit">
+            {/* <button className="bg-blue-500 py-4">Get Your Website</button> */}
+            <Button className="h-16 text-xl uppercase" type="submit">
               Get your website
             </Button>
           </form>
