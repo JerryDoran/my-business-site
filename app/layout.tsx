@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Copyright from "@/components/copyright";
 import { Toaster } from "react-hot-toast";
+import Chat from "@/components/chat";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -95,7 +96,10 @@ export default function RootLayout({
     >
       <body className="bg-[#070815] text-white/90 transition-all">
         <Header />
-        <main className="no-scrollbar overflow-x-hidden">{children}</main>
+        <main className="no-scrollbar overflow-x-hidden">
+          {children}
+          <Chat />
+        </main>
         <Toaster />
         <Footer />
         <Copyright />
