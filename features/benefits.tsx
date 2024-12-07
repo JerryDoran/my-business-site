@@ -8,6 +8,14 @@ export default function Benefits() {
       <h1 className="text-balance text-4xl font-semibold sm:text-7xl">
         <span className="heading-gradient">How</span> I can help
       </h1>
+      <p className="prose prose-invert mt-4 flex flex-col gap-2 text-base font-semibold italic md:text-xl">
+        <q className="text-slate-400">
+          I need more customers to find me online.
+        </q>
+        <q className="text-slate-400">
+          I don’t have time to figure out websites—it’s overwhelming!
+        </q>
+      </p>
 
       <div className="mt-6 text-balance text-slate-300">
         <p className="prose prose-invert text-xl md:text-2xl">
@@ -27,7 +35,7 @@ export default function Benefits() {
                 <Image src={benefit.image} alt="computer" className="size-20" />
               </div>
 
-              <div className="mt-4 text-[24px]">
+              <div className="mt-4 text-[24px] leading-7">
                 <h2>{benefit.title}</h2>
               </div>
 

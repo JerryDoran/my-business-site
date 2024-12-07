@@ -39,6 +39,12 @@ export default function ContactForm({
     <div className={cn("mt-10 w-full", className)}>
       <h1 className="mb-8 text-balance text-4xl font-semibold sm:text-7xl">
         <span className="heading-gradient">Contact</span> me
+        <p className="prose prose-invert mt-2 text-base font-semibold italic md:text-xl">
+          <q className="text-slate-400">
+            I just want someone to handle my website so I can focus on my
+            business.
+          </q>
+        </p>
       </h1>
       <Card className="glass-container w-full border-none bg-gradient-to-br from-gray-800 to-gray-950 px-0 py-4 text-white">
         <CardContent className="mt-5 px-3">

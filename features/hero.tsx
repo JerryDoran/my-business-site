@@ -24,7 +24,13 @@ export default function Hero() {
           </h1>
         </div>
 
-        <div className="hero-body mt-6 text-balance text-slate-300">
+        <p className="prose prose-invert mb-4 mt-4 flex text-base font-semibold italic md:text-xl">
+          <q className="text-slate-400">
+            I just want a website that looks professional and works—without
+            breaking the bank.
+          </q>
+        </p>
+        <div className="hero-body mt-6 text-slate-300 lg:text-balance">
           <p className="prose prose-invert text-xl font-semibold md:text-2xl">
             I create amazing and affordable websites for small to medium-sized
             businesses. My sites are effective, easy to use and look great -

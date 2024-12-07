@@ -96,10 +96,8 @@ export default function RootLayout({
     >
       <body className="bg-[#070815] text-white/90 transition-all">
         <Header />
-        <main className="no-scrollbar overflow-x-hidden">
-          {children}
-          <Chat />
-        </main>
+        <main className="no-scrollbar overflow-x-hidden">{children}</main>
+        <Chat />
         <Toaster />
         <Footer />
         <Copyright />

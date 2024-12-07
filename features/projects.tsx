@@ -14,6 +14,9 @@ export default function Projects() {
           <span className="heading-gradient">My</span> recent projects
         </h1>
       </div>
+      <p className="prose prose-invert mt-4 flex flex-col gap-2 text-base font-semibold italic md:text-xl">
+        <q className="text-slate-400">I want a website that looks like this!</q>
+      </p>
       <div className="mt-4 max-w-xl sm:align-baseline md:text-xl" id="projects">
         <p className="prose prose-invert text-xl md:text-2xl">
           My goal is to be the one-stop shop solution for all my clients

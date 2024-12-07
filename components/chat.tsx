@@ -78,7 +78,7 @@ export default function Chat() {
   }, [messages]);
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex flex-col">
       <AnimatePresence>
         {showChatIcon && (
           <motion.div

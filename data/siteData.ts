@@ -271,7 +271,7 @@ export const clientNeeds = [
   {
     title: "User-experienced focused",
     content:
-      "Your site will be easy enough to customize that anyone can pick it up to make a change big or small, from text changes to adding new pages.",
+      "A great user experience is essential for a website because it ensures visitors can easily navigate, find what they need, and engage with your content, ultimately driving satisfaction, trust, and conversions.",
     image: happyCustomer,
     wide: true,
   },
