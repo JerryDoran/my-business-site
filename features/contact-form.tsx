@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -9,9 +10,9 @@ import Image from "next/image";
 import logo from "@/assets/icon.png";
 import { cn } from "@/lib/utils";
 import { sendEmailAction } from "@/actions/send-email";
-import { useRef, useState } from "react";
 import { StringMap } from "@/types/contact";
 import toast from "react-hot-toast";
+import { Loader2 } from "lucide-react";
 
 export default function ContactForm({
   title,
@@ -21,9 +22,11 @@ export default function ContactForm({
   className?: string;
 }) {
   const [errors, setErrors] = useState<StringMap>({});
+  const [isPending, setIsPending] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   async function handleFormSubmit(formData: FormData) {
+    setIsPending(true);
     const { errors, successMessage } = await sendEmailAction(formData);
 
     if (successMessage) {
@@ -32,6 +35,7 @@ export default function ContactForm({
       formRef.current?.reset();
     }
     setErrors(errors || {});
+    setIsPending(false);
 
     console.log(errors, successMessage);
   }
@@ -123,6 +127,7 @@ export default function ContactForm({
             </div>
             {/* <button className="bg-blue-500 py-4">Get Your Website</button> */}
             <Button className="h-16 text-xl uppercase" type="submit">
+              {isPending && <Loader2 className="mr-2 size-4 animate-spin" />}{" "}
               Get your website
             </Button>
           </form>
