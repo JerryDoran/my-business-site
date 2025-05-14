@@ -42,8 +42,22 @@ import customrug from "@/assets/customrugs.png";
 import stumps from "@/assets/stumps.png";
 import handymanServices from "@/assets/handyman.png";
 import proBest from "@/assets/pro-best-carpentry.png";
+import adminDashboard from "@/assets/admin-dashboard.png";
 
 export const projects = [
+  {
+    slug: "admin-dashboard",
+    img: adminDashboard,
+    category: "design",
+    title: "Admin Dashboard",
+    description:
+      "Simplify your daily tasks and gain valuable insights with a centralized admin dashboard designed specifically for small business efficiency.",
+    summary:
+      "Streamline your small business operations with our intuitive admin dashboard, providing real-time insights into sales, inventory, and customer activity all in one place. Easily track key performance metrics, manage team tasks, and make data-driven decisions that help your business grow without the complexity of enterprise solutions.",
+
+    demoLink: "https://shadcn-admin-dashboard-kappa.vercel.app/",
+    isFeatured: true,
+  },
   {
     slug: "pro-best-carpentry",
     img: proBest,
