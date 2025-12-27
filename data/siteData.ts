@@ -43,6 +43,7 @@ import stumps from "@/assets/stumps.png";
 import handymanServices from "@/assets/handyman.png";
 import proBest from "@/assets/pro-best-carpentry.png";
 import adminDashboard from "@/assets/admin-dashboard.png";
+import manifestDashboard from "@/assets/manifest-dash.png";
 
 export const projects = [
   {
@@ -56,6 +57,19 @@ export const projects = [
       "Streamline your small business operations with our intuitive admin dashboard, providing real-time insights into sales, inventory, and customer activity all in one place. Easily track key performance metrics, manage team tasks, and make data-driven decisions that help your business grow without the complexity of enterprise solutions.",
 
     demoLink: "https://shadcn-admin-dashboard-kappa.vercel.app/",
+    isFeatured: true,
+  },
+  {
+    slug: "product-dashboard",
+    img: manifestDashboard,
+    category: "design",
+    title: "Product Dashboard",
+    description:
+      "Simplify your daily tasks and gain valuable insights with a centralized product dashboard designed specifically for small business efficiency.",
+    summary:
+      "Streamline your small business operations with our intuitive product dashboard, providing real-time insights into sales, inventory, and customer activity all in one place. Easily track key performance metrics and make data-driven decisions that help your business grow without the complexity of enterprise solutions.",
+
+    demoLink: "https://maestro-manifest.vercel.app/",
     isFeatured: true,
   },
   {
